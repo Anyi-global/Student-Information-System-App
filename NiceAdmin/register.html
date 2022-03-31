@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Dashboard - FUOAdmin Student Information System</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/fuo_logo1.png" rel="icon">
+    <link href="assets/img/fuo-logo.jpg" rel="fuo-logo">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-image: linear-gradient(120deg, green, rgb(202, 202, 63));
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid lime;
+    font-size: 250%;
+    margin-bottom: 10px;
+}
+
+form .text {
+    position: relative;
+   
+    margin: 30px 20px;
+    padding: 10px 0;
+}
+
+
+
+.container .text{
+    margin: 0px 15px;  
+}
+
+.container .text .form-select{
+    width: 97%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+}
+
+.text input {
+    width: 97%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+}
+
+.container img {
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.container .passign .pass {
+    margin: -35px 0 20px 0px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.container .passign .pass:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.signup {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.container .signup:hover {
+    text-decoration: none;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container" style="margin-top: 50px;">
+    <div id="id01" class="container">
+        <div class="row justify-content-center">
+        <img src="assets/img/fuo_logo1.png" alt="fuo logo">
+        <h1>Register</h1>
+        
+        <div class="wrapper">
+        <form action="" method="post">
+            
+            <!-- <div class="text">
+                <label for="username">Student id</label><br>
+                <input type="radio" placeholder="Enter your User Id" name="username" required><br>
+            </div> -->
+        <div class="text">
+
+            <div class="form-outline mb-3">
+                <label class="form-label" for="form2Example17" style="font-weight: 700;">User-Type</label>
+              <!-- <input type="email" id="form2Example17" placeholder="Enter Matric. Number" class="form-control form-control-md" /> -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select User</option>
+                <option value="1">Lecturer</option>
+                <option value="2">Student</option>
+              </select>
+            </div>
+
+            <div class="form-outline mb-3">
+                <label class="form-label" for="form2Example17" style="font-weight: 700;">Matric. Number</label>
+              <input type="text" id="form2Example17" placeholder="Enter Matric. Number" class="form-control form-control-md" required/>
+            </div>
+
+            <div class="form-outline mb-3">
+                <label class="form-label" for="form2Example17" style="font-weight: 700;">Email Address</label>
+              <input type="email" id="form2Example17" placeholder="Enter Email Address" class="form-control form-control-md" required/>
+              
+            </div>
+
+            <div class="form-outline mb-3">
+                <label class="form-label" for="form2Example27" style="font-weight: 700;">Password</label>
+              <input type="password" id="form2Example27" placeholder="Choose Password" class="form-control form-control-md" required/>   
+            </div>
+
+            <div class="form-outline mb-3">
+                <label class="form-label" for="form2Example27" style="font-weight: 700;">Confirm Password</label>
+              <input type="password" id="form2Example27" placeholder="Confirm Password" class="form-control form-control-md" required/>   
+            </div>
+
+        </div>
+
+            <div class="passign">
+                <div><input type="submit" value="Register" id=""></div> 
+                <div class="signup">Already have an account? <a href="login.html">Sign in</a>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

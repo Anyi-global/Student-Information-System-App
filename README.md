@@ -1,0 +1,1 @@
+In this system, the admin will be able to add students belonging to computer science department to the departmental database. The admin can also add lecturers and courses offered in the department. The system will have two main functionalities; Assignment submission and course registration form submission to the HOD's office.
